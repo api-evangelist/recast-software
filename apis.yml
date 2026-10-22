@@ -1,25 +1,95 @@
 aid: recast-software
+
 name: Recast Software
-description: 'Recast Software is a company surfaced via the API Evangelist harvest backlog (source: vc-portfolio;
-  backed by arthur-ventures) and added to the network as a stub for full-pipeline profiling.'
+
+description: 'Extend the power of Configuration Manager, Intune, and more to achieve compliance and reclaim efficiency with Recast. Recast provides automation and compliance solutions for modern workplaces, integrating with Microsoft Endpoint Manager and other IT management tools.'
+
 url: https://raw.githubusercontent.com/api-evangelist/recast-software/refs/heads/main/apis.yml
+
 x-type: company
+
 x-source: harvest:vc-portfolio
-x-tier: stub
-x-tier-reason: harvest
+
+x-tier: profiled
+x-tier-reason: enrichment pass 2026-10-21 (modular-v1; was harvest)
+
 specificationVersion: '0.20'
+
 created: '2026-10-21'
+
 modified: '2026-10-21'
+
 tags:
 - Company
-apis: []
+- Automation
+- Compliance
+- IT Management
+- Microsoft
+
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
-x-backed-by:
-- arthur-ventures
+
 common:
+- type: Spectral
+  url: rules/recast-software-rules.yml
+- type: Vocabulary
+  url: vocabulary/recast-software-vocabulary.yml
+- type: Conformance
+  url: conformance/recast-software-conformance.yml
+- type: WellKnown
+  url: well-known/recast-software-well-known.yml
+- type: Hosts
+  url: hosts/recast-software-hosts.yml
+- type: Vendors
+  url: vendors/recast-software-vendors.yml
+- type: TermsOfService
+  url: https://www.recastsoftware.com/terms-of-service/
+- type: Support
+  url: https://www.recastsoftware.com/support/
+- type: SignUp
+  url: https://auth.recastsoftware.com/Account/Register
+- type: Security
+  url: https://www.recastsoftware.com/security/
+- type: PrivacyPolicy
+  url: https://www.recastsoftware.com/privacy-policy/
+- type: Newsroom
+  url: https://www.recastsoftware.com/news/
+- type: DeveloperPortal
+  url: https://portal.recastsoftware.com
+- type: Blog
+  url: https://www.recastsoftware.com/blog/
+- type: GettingStarted
+  url: https://docs.recastsoftware.com/help/application-workspace-migration-utility-getting-started
+- type: GitHubOrganization
+  url: https://github.com/RecastSoftware
+- type: VulnerabilityDisclosure
+  url: security/recast-software-vulnerability-disclosure.yml
+- type: DomainSecurity
+  url: security/recast-software-domain-security.yml
 - type: Website
   url: https://www.recastsoftware.com
+- type: Documentation
+  url: https://docs.recastsoftware.com/help
+
+apis:
+- aid: recast-software:recast-software-api
+  name: Recast Software API
+  description: 'Recast Software API as documented publicly: 2 operations. Contract generated from the documentation by API Evangelist (2026-10-21);
+    not the provider''s own document.'
+  humanURL: https://docs.recastsoftware.com/help/privilege-manager-legacy-api-actions
+  properties:
+  - type: OpenAPI
+    url: openapi/_ae-authored/recast-software-openapi-generated.yml
+    x-provenance: generated
+
+x-backed-by:
+- arthur-ventures
+x-enrichment:
+  date: '2026-10-21'
+  status: enriched
+  artifacts_added: 16
+  pass: modular-v1
+  engine: identity=local,contract=local,surfaces=local,docs=local,regulatory=local

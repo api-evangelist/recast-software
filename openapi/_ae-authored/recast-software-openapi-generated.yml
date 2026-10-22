@@ -1,0 +1,63 @@
+openapi: 3.1.0
+info:
+  title: Recast Software API
+  version: '2026-10-21'
+  description: 'GENERATED FROM DOCUMENTATION by API Evangelist on 2026-10-21: 2 operation(s) read from 2 public documentation page(s) (each operation
+    names its page in x-source). This is not the provider''s published contract; Recast Software has published no machine-readable contract that
+    the pipeline could find. Engine: local.'
+  x-evidence-tiers:
+    code-example: 0
+    documentation: 2
+    pages-with-code: 0
+    pages-read: 2
+  x-generated-from: documentation
+  x-provenance: generated
+  x-authored-by: API Evangelist
+  x-generated: '2026-10-21'
+  x-generator: generate-contract-from-docs.py
+  x-engine: local
+  x-sources:
+  - https://docs.recastsoftware.com/help/privilege-manager-legacy-api-actions
+  - https://docs.recastsoftware.com/help/privilege-manager-legacy-api-active-directory-computers
+paths:
+  /directoryComputers:
+    post:
+      operationId: post_directoryComputers
+      tags:
+      - Directorycomputers
+      summary: List Active Directory Computers
+      description: Lists properties and relationships of the directory Computer objects.
+      x-source: https://docs.recastsoftware.com/help/privilege-manager-legacy-api-active-directory-computers
+      responses:
+        '200':
+          description: Success (status as documented)
+      x-evidence:
+        kind: documentation
+  /generateActivationCode:
+    post:
+      operationId: post_generateActivationCode
+      tags:
+      - Generateactivationcode
+      summary: Generate activation code for the Privilege Manager client.
+      x-source: https://docs.recastsoftware.com/help/privilege-manager-legacy-api-actions
+      parameters:
+      - name: Authorization
+        in: header
+        required: false
+        schema:
+          type: string
+        description: If required by Recast Agent Gateway configuration
+      - name: Key
+        in: header
+        required: false
+        schema:
+          type: string
+        description: Authentication key if required
+      responses:
+        '201':
+          description: Success (status as documented)
+      x-evidence:
+        kind: documentation
+tags:
+- name: Directorycomputers
+- name: Generateactivationcode

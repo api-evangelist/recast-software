@@ -1,0 +1,22 @@
+generated: '2026-10-22'
+method: derived
+generator: derive-vocabulary.py
+source: openapi/_ae-authored/recast-software-openapi-generated.yml
+vocabulary:
+  name: Recast Software Domain Vocabulary
+  description: 'Terms declared by Recast Software''s own API contract: its resource groups, objects and enumerations, with the contract''s definitions.
+    Derived, not authored.'
+  version: '2026-10-22'
+  terms:
+  - term: Directorycomputers
+    definition: 'Resource group in the contract; its operation POST /directoryComputers: Lists properties and relationships of the directory Computer
+      objects.'
+    tags:
+    - Resource Group
+    source: openapi/_ae-authored/recast-software-openapi-generated.yml
+  - term: Generateactivationcode
+    definition: 'Resource group in the contract; its operation POST /generateActivationCode: Generate activation code for the Privilege Manager
+      client.'
+    tags:
+    - Resource Group
+    source: openapi/_ae-authored/recast-software-openapi-generated.yml
